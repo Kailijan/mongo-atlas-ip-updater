@@ -1,0 +1,19 @@
+{
+  "name": "mongo-atlas-ip-updater",
+  "version": "0.1.0",
+  "description": "Update the MongoDB Atlas Network Access list. This is necessary when using dynamic IP addresses.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kailijan",
+  "license": "MIT",
+  "dependencies": {
+    "digest-fetch": "^1.1.6",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "public-ip": "^4.0.3"
+  }
+}

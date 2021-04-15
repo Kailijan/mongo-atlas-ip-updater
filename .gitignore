@@ -1,3 +1,5 @@
 node_modules/
-.env
-public-ip.txt
+*.env
+public-ip*.txt
+*.js
+dist/*

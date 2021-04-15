@@ -4,7 +4,7 @@
   "description": "Update the MongoDB Atlas Network Access list. This is necessary when using dynamic IP addresses.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kailijan/mongo-atlas-ip-updater"
+    "url": "https://github.com/Kailijan/mongo-atlas-ip-updater.git"
   },
   "main": "dist/index.js",
   "type": "commonjs",

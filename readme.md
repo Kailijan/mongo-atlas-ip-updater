@@ -1,5 +1,7 @@
 # Mongo IP Updater
 
+[![Node.js CI](https://github.com/Kailijan/mongo-atlas-ip-updater/actions/workflows/node.js.yml/badge.svg)](https://github.com/Kailijan/mongo-atlas-ip-updater/actions/workflows/node.js.yml)
+
 This NodeJS application adds the public ip address of the device it's run on to the Network Access list by using the [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) REST-API.
 
 ## Setup

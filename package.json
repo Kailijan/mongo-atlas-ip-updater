@@ -1,6 +1,6 @@
 {
   "name": "mongo-atlas-ip-updater",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Update the MongoDB Atlas Network Access list. This is necessary when using dynamic IP addresses.",
   "repository": {
     "type": "git",

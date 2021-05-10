@@ -56,9 +56,9 @@ export class IPUpdater {
                 }
             })
             .catch((err) => {
-                throw err;
+                console.log(err);
             });
-        if (!res || res?.error) {
+        if (res?.error && res.error !== 404) {
             throw res;
         }
         console.log("Success");
@@ -91,9 +91,9 @@ export class IPUpdater {
                 }
             })
             .catch((err) => {
-                throw err;
+                console.log(err);
             });
-        if (!res || res.error) {
+        if (res?.error) {
             throw res;
         }
         console.log("   Success");

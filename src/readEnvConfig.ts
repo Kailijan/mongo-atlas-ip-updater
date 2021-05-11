@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 import { IAtlasConfig } from "./AtlasConfig";
 
-export default function readMongoAtlasConfig(envFilePath: string): IAtlasConfig {
+export function readMongoAtlasConfig(envFilePath: string): IAtlasConfig {
     const parseEnv = dotenv.config({
         path: envFilePath,
     });
@@ -34,3 +34,5 @@ export default function readMongoAtlasConfig(envFilePath: string): IAtlasConfig 
         env: process.env.NODE_ENV,
     };
 }
+
+module.exports = readMongoAtlasConfig;

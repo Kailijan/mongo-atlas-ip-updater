@@ -1,5 +1,7 @@
-import fs from "fs";
-import readMongoAtlasConfig from "../src/readEnvConfig";
+// tslint:disable-next-line: no-var-requires
+const fs = require("fs");
+// tslint:disable-next-line: no-var-requires
+const readMongoAtlasConfig = require("../src/readEnvConfig");
 
 const dummybaseUrl = "baseUrl";
 const dummyPublicKey = "publicKey";

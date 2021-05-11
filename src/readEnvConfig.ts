@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 import { IAtlasConfig } from "./AtlasConfig";
 
-export function readMongoAtlasConfig(envFilePath: string): IAtlasConfig {
+export default function readMongoAtlasConfig(envFilePath: string): IAtlasConfig {
     const parseEnv = dotenv.config({
         path: envFilePath,
     });

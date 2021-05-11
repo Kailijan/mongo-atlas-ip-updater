@@ -3,5 +3,5 @@ export interface IAtlasConfig {
     publicKey: string;
     privateKey: string;
     groupId: string;
-    env: "dev" | "qs" | "prod" | string;
+    env: "dev" | "qs" | "prod" | "test" | string;
 }

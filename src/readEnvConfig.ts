@@ -1,26 +1,9 @@
 import * as dotenv from "dotenv";
-import { exit } from "process";
 import { IAtlasConfig } from "./AtlasConfig";
-import { IPUpdater } from "./IPUpdater";
 
-try {
-    const atlasConfig = readEnvConfig();
-
-    const updater = new IPUpdater(atlasConfig);
-
-    updater.updatePublishedIp().then(() => {
-        console.log("Finished without errors");
-    }).catch((err) => {
-        console.error(err);
-    });
-} catch (err) {
-    console.error(err);
-    exit(1);
-}
-
-function readEnvConfig(): IAtlasConfig {
+export default function readMongoAtlasConfig(envFilePath: string): IAtlasConfig {
     const parseEnv = dotenv.config({
-        path: process.env.NODE_ENV + ".env",
+        path: envFilePath,
     });
 
     let envConfig;

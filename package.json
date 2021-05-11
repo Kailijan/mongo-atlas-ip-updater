@@ -13,7 +13,7 @@
     "start:prod": "cross-env NODE_ENV=prod node dist/index.js",
     "start:qa": "cross-env NODE_ENV=qa node dist/index.js",
     "start:dev": "cross-env NODE_ENV=dev node dist/index.js",
-    "test": "jest"
+    "test": "npx jest"
   },
   "author": "kailijan",
   "license": "MIT",

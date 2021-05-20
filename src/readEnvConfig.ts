@@ -34,5 +34,3 @@ export default function readMongoAtlasConfig(envFilePath: string): IAtlasConfig 
         env: process.env.NODE_ENV,
     };
 }
-
-module.exports = readMongoAtlasConfig;

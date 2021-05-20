@@ -1,5 +1,5 @@
-const fs = require("fs");
-const readMongoAtlasConfig = require("../dist/readEnvConfig");
+import fs from "fs";
+import readMongoAtlasConfig from "../dist/readEnvConfig";
 
 const dummybaseUrl = "baseUrl";
 const dummyPublicKey = "publicKey";
